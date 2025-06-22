@@ -11,7 +11,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 # Setup
-DATABASE_URL = "postgresql://postgres:ahsan123@localhost:5432/fluttermusicapp"
+DATABASE_URL = "postgresql://postgres:password@localhost:5432/fluttermusicapp"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
 Base = declarative_base()
@@ -57,8 +57,8 @@ app = FastAPI()
 # Cloudinary
 cloudinary.config( 
     cloud_name="dqyhuxexh", 
-    api_key="368378574669443", 
-    api_secret="ScpsRrUn8eVxw3K_uYzk9Ffrql8", 
+    api_key="", 
+    api_secret="", 
     secure=True
 )
 
